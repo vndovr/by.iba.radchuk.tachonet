@@ -1,0 +1,36 @@
+/**
+ * @author Vladimir Radchuk
+ */
+public class TNS {
+
+	/**
+	 * Default constructor
+	 */
+	public TNS() {
+		super();
+	}
+
+	/**
+	 * @param surName
+	 * @param firstName
+	 * @return
+	 */
+	public String[] GetPhonexSearchKeys(String surName, String firstName) {
+		return new String[] { surName.toUpperCase(), firstName.toUpperCase() };
+	}
+
+	/**
+	 * @param surName
+	 * @param firstName
+	 * @param placeOfBirth
+	 * @param drivingLicenseNumber
+	 * @return
+	 */
+	public String[] transliterateToUSAscii(String surName, String firstName,
+			String placeOfBirth, String drivingLicenseNumber) {
+		return new String[] { surName.toUpperCase(), 
+				firstName.toUpperCase(), 
+				placeOfBirth.toUpperCase(),
+				drivingLicenseNumber.toUpperCase() };
+	}
+}
